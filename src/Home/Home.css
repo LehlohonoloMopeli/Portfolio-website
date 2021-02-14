@@ -1,0 +1,30 @@
+.home {
+    background-image: url('../Images/img6.jpg');
+    background-size: cover;
+    height: 530px;
+    width: 100%;
+}
+
+.home__text {
+    display: flex;
+    flex-direction: column;
+    color: #16e0bd !important;
+    margin-top: 200px;
+    margin-left: 50px;
+}
+
+.home__text__greeting {
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.home__text__name {
+    font-weight: bolder;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.home__text__description {
+    font-weight: lighter;
+    font-size: 30px;
+}
