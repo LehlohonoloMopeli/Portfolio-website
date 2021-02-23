@@ -18,3 +18,22 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+@media (max-width: 480px) {
+    .portfolio {
+        margin-top: 15px;
+        height: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .portfolio__title {
+        font-size: 35px;
+    }
+
+    .portfolio__projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}

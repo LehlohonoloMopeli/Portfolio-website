@@ -2,21 +2,33 @@ import React from 'react'
 import { Card, CardContent } from '@material-ui/core'
 import './Project.css'
 
-function Project({url, title, github, weblink, description}) {
+function Project({url, title, github, weblink, description, tools}) {
     return (
         <Card className='project'>
             <CardContent>
                 <h2 className='project__title'>{title}</h2>
-                <img className='project__image' src={url} alt=''/>
+                <div className='project__image__container'>
+                    <img className='project__image' src={url} alt=''/>
+                </div>
+                
                 <h2 className='project__description__tag'>Description</h2>
                 <Card className='project__description'>
                     <CardContent>
-                        <p>{description}</p>
+                        <p><span><strong>{description}</strong></span>
+                            <span>{tools}</span>
+                        </p>
                     </CardContent>
                 </Card>
+
                 <div className='project__links'>
-                    <h4 className='project__github__link'>Github link : <a href=''>{github}</a></h4>
-                    <h4 className='project__hosted__link'>Live link : <a href=''>{weblink}</a></h4>
+                    <div>
+                        <a href= {github} class="project__github__link">Github link</a>
+                    </div>
+                    <div>
+                        <a href={weblink} class="project__live__link">Web-app link</a>
+                    </div>
+
+                    
                 </div>
                 
             </CardContent>

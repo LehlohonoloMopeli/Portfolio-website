@@ -24,7 +24,6 @@ function About() {
                             <div className='about__body__btn'>
                                 <a href="resume.pdf" class="about__resume" download>MY RESUME</a>
                             </div>
-                            
                         </CardContent>
                     </Card>
                     
